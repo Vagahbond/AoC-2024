@@ -57,6 +57,8 @@ pub fn download(day: Day) -> Result<Output, AocCommandError> {
         "download",
         &[
             "--overwrite".into(),
+            "-s".into(),
+            "./.adventofcode.session".into(),
             "--input-file".into(),
             input_path.to_string(),
             "--puzzle-file".into(),
