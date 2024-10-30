@@ -8,7 +8,7 @@
   in {
     devShells.${system} = {
       default = pkgs.mkShell {
-        buildInputs = [pkgs.cargo pkgs.rustc];
+        buildInputs = with pkgs; [cargo rustc aoc-cli];
       };
     };
   };
